@@ -1,11 +1,7 @@
-from fastmcp import FastMCP
 from mock_data.risk import RISK_METRICS, LIQUIDITY
 from mock_data.holdings import FUNDS
 
-mcp = FastMCP()
 
-
-@mcp.tool
 def get_risk_metrics(fund: str) -> dict:
     """
     Return key risk metrics for a fund: Value at Risk (VaR), volatility,
@@ -39,7 +35,6 @@ def get_risk_metrics(fund: str) -> dict:
     }
 
 
-@mcp.tool
 def get_factor_exposures(fund: str) -> dict:
     """
     Return the fund's exposure to common systematic risk factors:
@@ -73,7 +68,6 @@ def get_factor_exposures(fund: str) -> dict:
     }
 
 
-@mcp.tool
 def get_liquidity_analysis(fund: str) -> dict:
     """
     Return a liquidity analysis showing how many days it would take to unwind

@@ -1,13 +1,9 @@
-from fastmcp import FastMCP
 from mock_data.performance import PERFORMANCE
 from mock_data.holdings import FUNDS
 
 VALID_PERIODS = ["1d", "1w", "mtd", "qtd", "ytd", "1y", "3y", "itd"]
 
-mcp = FastMCP()
 
-
-@mcp.tool
 def get_fund_performance(fund: str, period: str = "ytd") -> dict:
     """
     Return fund return vs benchmark for a given period.
@@ -42,7 +38,6 @@ def get_fund_performance(fund: str, period: str = "ytd") -> dict:
     }
 
 
-@mcp.tool
 def get_performance_attribution(fund: str, period: str = "mtd") -> dict:
     """
     Return performance attribution by position — which holdings drove returns

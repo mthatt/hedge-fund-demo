@@ -1,10 +1,6 @@
-from fastmcp import FastMCP
 from mock_data.holdings import HOLDINGS, FUNDS, DATA_AS_OF
 
-mcp = FastMCP()
 
-
-@mcp.tool
 def get_portfolio_holdings(fund: str) -> dict:
     """
     Return the current holdings for a given fund, including ticker, sector,
@@ -39,7 +35,6 @@ def get_portfolio_holdings(fund: str) -> dict:
     }
 
 
-@mcp.tool
 def get_sector_exposure(fund: str) -> dict:
     """
     Return the portfolio's exposure breakdown by sector as a percentage of NAV.

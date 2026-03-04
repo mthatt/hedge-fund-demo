@@ -1,11 +1,7 @@
-from fastmcp import FastMCP
 from mock_data.trades import TRADE_BLOTTER, DATA_AS_OF
 from mock_data.holdings import FUNDS
 
-mcp = FastMCP()
 
-
-@mcp.tool
 def get_trade_blotter(fund: str | None = None, date: str | None = None) -> dict:
     """
     Return the trade blotter showing all executed trades. Can be filtered by
