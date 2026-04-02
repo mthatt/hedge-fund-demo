@@ -37,7 +37,7 @@ mcp = FastMCP(
     """,
 )
 
-VALID_PERIODS = ["1d", "1w", "mtd", "qtd", "ytd", "1y", "3y", "itd"]
+VALID_PERIODS = ["1d", "1w", "mtd", "qtd", "ytd", "1y", "3y", "itd"]  # get_fund_performance
 
 
 # ---------------------------------------------------------------------------
