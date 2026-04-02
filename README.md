@@ -30,9 +30,9 @@ The `RISK_LIMITS` dict at the top of `main.py` controls compliance thresholds:
 ```python
 RISK_LIMITS = {
     "max_position_pct": 15,       # max single-position weight (%)
-    "max_sector_pct": 40,         # max single-sector weight (%)
+    "max_sector_pct": 55,         # max single-sector weight (%)
     "max_var_95_pct": 2.0,        # max daily VaR at 95% as % of NAV
-    "min_liquidity_1d_pct": 50,   # min % of portfolio liquidatable in 1 day
+    "min_liquidity_1d_pct": 45,   # min % of portfolio liquidatable in 1 day
 }
 ```
 

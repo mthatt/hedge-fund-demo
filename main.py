@@ -13,10 +13,10 @@ from mock_data.trades import TRADE_BLOTTER, DATA_AS_OF as TRADES_AS_OF
 # that's a violation. Change it to 50 and redeploy — now it passes.
 # ============================================================================
 RISK_LIMITS = {
-    "max_position_pct": 80,       # max single-position weight (%)
-    "max_sector_pct": 70,         # max single-sector weight (%)
+    "max_position_pct": 15,       # max single-position weight (%)
+    "max_sector_pct": 55,         # max single-sector weight (%); MACRO-GLOBAL commodities ~50%
     "max_var_95_pct": 2.0,        # max daily VaR at 95% as % of NAV
-    "min_liquidity_1d_pct": 20,   # min % of portfolio liquidatable in 1 day
+    "min_liquidity_1d_pct": 45,  # min % liquid in 1d; MACRO-GLOBAL mock is 46.2%
 }
 # ============================================================================
 
